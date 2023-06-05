@@ -1,7 +1,8 @@
-import React from 'react'
+import React,{useContext} from 'react'
 import { Container, Row, Button, Col } from 'react-bootstrap'
-
+import CartContext from '../../store/cart-context'
 const productsArr = [
+
     {
         title: 'Colors',
         price: 100,
@@ -25,20 +26,30 @@ const productsArr = [
     ]
 
 const AvailableProducts=()=>{
+  const CartCtx=useContext(CartContext)
+  const btnClickHandler=(item)=>{
+    CartCtx.addItem({
+      id: item.title, // pass the item's id instead of generating a new one
+      name: item.title,
+      price: item.price,
+      image : item.imageUrl,
+      amount: Number(item.amount),
+    });
+  }
   return (
     <>
       <Container>
         <Row>
         {productsArr.map((item) => (
-            <Col key={item.title} xs={12} md={3}  lg={3}>
-             
+            <Col id={item.id} key={item.title} xs={12}  lg={3}>
+                  
                 <h3>{item.title}</h3>
                 <div>
                     <img src={item.imageUrl} alt={item.title} />
                 </div>
                 <div>
-                  <span>${item.price}</span>
-                  <Button variant="primary">Add To Cart</Button>
+                  <span>${item.price} </span>
+                  <Button variant="primary" onClick={()=>btnClickHandler(item)}>Add To Cart</Button>
                 </div>
              
             </Col>

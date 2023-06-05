@@ -1,9 +1,14 @@
-import React from 'react'
+import { useContext } from "react";
+import CartContext from "../../store/cart-context";
 import Button from 'react-bootstrap/Button';
 import classes from "./HeaderCartButton.module.css"
-import CartIcon from '../Cart/CartIcon'
+
 
 const HeaderCartButton=(props)=>{
+    const cartCtx=useContext(CartContext);
+    const numberOfCartItems=cartCtx.items.reduce((currNumber,item)=>{
+    return currNumber+item.amount;
+  },0);
   return (
     <>
       <Button variant="outline-primary" onClick={props.onClick}>
@@ -11,7 +16,7 @@ const HeaderCartButton=(props)=>{
             {/* <CartIcon/> */}
         </span>
         <span className={classes.title}>Cart</span>
-        <span className={classes.badge}>0</span>
+        <span className={classes.badge}>{numberOfCartItems}</span>
       </Button>{" "}
     </>
   )

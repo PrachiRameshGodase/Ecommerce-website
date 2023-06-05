@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Cart from "./components/Cart/Cart"
 import Header from './components/Layout/Header';
 import AvailableProducts from './components/Products/AvailableProducts';
+import CartProvider from './store/CardProvider';
 
 function App() {
   const [cartIsShown, setCartIsShown]=useState(false);
@@ -17,11 +18,11 @@ function App() {
     setCartIsShown(false)
   }
   return (
-    <>
+    <CartProvider>
     {cartIsShown && <Cart onClose={hideCartHandler}/>}
       <Header onShowCart={showCartHandler}/>
     <AvailableProducts/>
-    </>
+    </CartProvider>
   );
 }
 
