@@ -59,14 +59,14 @@ function Cart(props) {
         </li>
     ))}</ul>
   return (
-    <Modal>
+    <Modal onClose={props.onClose}>
       {cartItems}
       <div className={classes.total}>
         <span>Total </span>
         <span>$100</span>
       </div>
       
-      <Button variant="warning">Close</Button>{' '}
+      <Button variant="warning" onClick={props.onClose}>Close</Button>{' '}
       <Button variant="primary">PURCHASE</Button>{' '}
     
     </Modal>

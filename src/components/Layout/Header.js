@@ -2,7 +2,7 @@ import React from 'react'
 import {Navbar,Container,Nav} from 'react-bootstrap'
 import HeaderCartButton from './HeaderCartButton'
 
-const Header=()=> {
+const Header=(props)=> {
   return (
     <>
        <Navbar bg="dark" expand="lg" variant="dark">
@@ -14,7 +14,7 @@ const Header=()=> {
                     <Nav.Link href="#about">ABOUT</Nav.Link>
                 </Nav>
             </Container>
-            <HeaderCartButton/>
+            <HeaderCartButton onClick={props.onShowCart}/>
             <h2>.</h2>
        </Navbar>
        
