@@ -41,7 +41,7 @@ const AvailableProducts=()=>{
       <Container>
         <Row>
         {productsArr.map((item) => (
-            <Col id={item.id} key={item.title} xs={12}  lg={3}>
+            <Col id={item.title} key={item.title} xs={12}  lg={3} xl={3}>
                   
                 <h3>{item.title}</h3>
                 <div>
