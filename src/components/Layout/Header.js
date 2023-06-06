@@ -6,7 +6,7 @@ import HeaderCartButton from './HeaderCartButton'
 const Header=(props)=> {
   return (
     <>
-       <Navbar bg="dark" expand="lg" variant="dark">
+       <Navbar bg="dark" expand="lg" variant="dark" fixed="top">
         <Container>
             <Navbar.Brand href="#home">Welcome</Navbar.Brand>
                 <Nav className="me-auto">

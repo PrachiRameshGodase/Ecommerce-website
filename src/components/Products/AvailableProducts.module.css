@@ -1,12 +1,10 @@
 .Label{
     color: white;
     font-size: 100px;
+    padding: 40px;
     margin-top: 60px;
     text-align: center;
-}
-.border{
-    background-color: #777;
-    text-align: center;
+    background-color: #777
 }
 .bottom{
     background-color: rgb(127, 192, 220);

@@ -1,6 +1,8 @@
 import React,{useContext} from 'react'
-import { Container, Row, Button, Col } from 'react-bootstrap'
+import { Container, Row, Button, Col,Card } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 import CartContext from '../../store/cart-context'
+import classes from "./AvailableProducts.module.css"
 const productsArr = [
 
     {
@@ -38,26 +40,33 @@ const AvailableProducts=()=>{
   }
   return (
     <>
+     {/* <div className={classes.border}> */}
+            <h1 className={classes.Label}>The Generics</h1>
+      {/* <div/> */}
+      {/* <h1 className="h1-label">Products</h1> */}
       <Container>
         <Row>
-        {productsArr.map((item) => (
-            <Col id={item.title} key={item.title} xs={12}  lg={3} xl={3}>
-                  
-                <h3>{item.title}</h3>
-                <div>
-                    <img src={item.imageUrl} alt={item.title} />
-                </div>
-                <div>
-                  <span>${item.price} </span>
-                  <Button variant="primary" onClick={()=>btnClickHandler(item)}>Add To Cart</Button>
-                </div>
-             
+          {productsArr.map((item) => (
+            <Col key={item.id} md={6} lg={6} xl={3} className="mb-4">
+              <Card className="shadow-lg">
+                <Link to={`//${item.id}`}>
+                  <Card.Img variant="top" src={item.imageUrl} alt={item.title} />
+                </Link>
+                <Card.Body>
+                  <Card.Title>{item.title}</Card.Title>
+                  <Card.Text>${item.price}</Card.Text>
+                  <Button variant="success" onClick={() => btnClickHandler(item)}>
+                    ADD TO CART
+                  </Button>
+                </Card.Body>
+              </Card>
             </Col>
           ))}
         </Row>
       </Container>
+      <h1 className={classes.bottom}>The Generics</h1>
     </>
-  )
-}
-
+  );
+};
+  
 export default AvailableProducts

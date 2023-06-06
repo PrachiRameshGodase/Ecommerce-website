@@ -8,28 +8,30 @@ import classes from "./Home.module.css";
 
 const Home = () => {
   return (
-    
-    <Container className="text-center">
+    <div>
+    {/* <Container className="text-center"> */}
          <div className={classes.border}>
             <h1 className={classes.Label}>The Generics</h1>
-       
+            
             <Row> 
                 <Col>
-                    <Button variant="outline-primary" className='shadow-lg'>Get Our Latest Album</Button>
+                    <Button variant="outline-primary" className="shadow-lg text-center">Get Our Latest Album</Button>
                 </Col>
             </Row>
             <Row>
                 <Col>
-                    <Button variant="outline-primary" className="rounded-circle"><BsPlay /></Button>
+                    <Button variant="outline-primary" className="rounded-circle text-center"><BsPlay /></Button>
                 </Col>
             </Row>
             
         </div>
+        <Container className="text-center">
         <Row>
                 <Col>
                     <h1>Tours</h1>
                 </Col>
         </Row>
+        
       <Row>
         <Col>
           <Table striped bordered hover>
@@ -76,6 +78,8 @@ const Home = () => {
       </Row>
       
     </Container>
+    <h1 className={classes.bottom}>The Generics</h1>
+    </div>
     
     
   );
