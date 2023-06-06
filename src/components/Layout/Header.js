@@ -10,7 +10,7 @@ const Header=(props)=> {
         <Container>
             <Navbar.Brand href="#home">Welcome</Navbar.Brand>
                 <Nav className="me-auto">
-                    <Nav.Link as={Link} to="/">HOME</Nav.Link>
+                    <Nav.Link as={Link} to="/home">HOME</Nav.Link>
                     <Nav.Link href="#store">STORE</Nav.Link>
                     <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
                 </Nav>

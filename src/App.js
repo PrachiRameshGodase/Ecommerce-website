@@ -8,6 +8,7 @@ import Header from './components/Layout/Header';
 import AvailableProducts from './components/Products/AvailableProducts';
 import CartProvider from './store/CardProvider';
 import About from "./components/Pages/About";
+import Home from "./components/Pages/Home";
 
 function App() {
 
@@ -29,8 +30,9 @@ function App() {
       <Header onShowCart={showCartHandler}/>
       <Routes>
       
-      <Route path="/" element={< AvailableProducts/>} />
-      <Route path="/products" element={<About />} />
+      <Route path="/home" element={<Home/>} />
+      <Route path="/about" element={<About />} />
+      <Route path="/" element={<AvailableProducts/>} />
         </Routes>
        
         
