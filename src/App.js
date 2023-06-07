@@ -9,6 +9,7 @@ import AvailableProducts from './components/Products/AvailableProducts';
 import CartProvider from './store/CardProvider';
 import About from "./components/Pages/About";
 import Home from "./components/Pages/Home";
+import ContactUs from "./components/Pages/ContactUs";
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       
       <Route path="/home" element={<Home/>} />
       <Route path="/about" element={<About />} />
+      <Route path="/contact_us" element={< ContactUs/>} />
       <Route path="/" element={<AvailableProducts/>} />
         </Routes>
        
