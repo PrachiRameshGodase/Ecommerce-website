@@ -1,0 +1,23 @@
+.Label{
+    color: white;
+    font-size: 100px;
+    padding: 40px;
+    margin-top: 60px;
+    text-align: center;
+    background-color: #777
+}
+.bottom{
+    background-color: rgb(127, 192, 220);
+    margin: auto;
+    color: white;
+    font-size: 70px;
+    color: white;
+   
+}
+.container h1{
+    text-align: center;
+}
+.container Button{
+    
+    text-align: center;
+}

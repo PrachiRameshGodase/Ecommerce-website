@@ -10,6 +10,7 @@ import CartProvider from './store/CardProvider';
 import About from "./components/Pages/About";
 import Home from "./components/Pages/Home";
 import ContactUs from "./components/Pages/ContactUs";
+import ProductDetails from "./components/Products/ProductDetails";
 
 function App() {
 
@@ -31,10 +32,11 @@ function App() {
       <Header onShowCart={showCartHandler}/>
       <Routes>
       
-      <Route path="/home" element={<Home/>} />
+      <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About />} />
       <Route path="/contact_us" element={< ContactUs/>} />
-      <Route path="/" element={<AvailableProducts/>} />
+      <Route path="/product" element={<AvailableProducts/>} />
+      <Route path="/product/:imageUrl" element={<ProductDetails/>}/>
         </Routes>
        
         
