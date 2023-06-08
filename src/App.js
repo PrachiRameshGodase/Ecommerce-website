@@ -11,6 +11,7 @@ import About from "./components/Pages/About";
 import Home from "./components/Pages/Home";
 import ContactUs from "./components/Pages/ContactUs";
 import ProductDetails from "./components/Products/ProductDetails";
+import LoginForm from "./components/Pages/LoginForm";
 
 function App() {
 
@@ -35,8 +36,10 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About />} />
       <Route path="/contact_us" element={< ContactUs/>} />
+      <Route path="/login" element={< LoginForm/>} />
       <Route path="/product" element={<AvailableProducts/>} />
       <Route path="/product/:imageUrl" element={<ProductDetails/>}/>
+
         </Routes>
        
         

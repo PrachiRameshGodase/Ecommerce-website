@@ -14,6 +14,7 @@ const Header=(props)=> {
                     <Nav.Link as={Link} to="/product">STORE</Nav.Link>
                     <Nav.Link as={Link} to="/about">ABOUT</Nav.Link>
                     <Nav.Link as={Link} to="/contact_us">CONTACTUS</Nav.Link>
+                    <Nav.Link as={Link} to="/login">LOGIN</Nav.Link>
                 </Nav>
             </Container>
             <HeaderCartButton onClick={props.onShowCart}/>
