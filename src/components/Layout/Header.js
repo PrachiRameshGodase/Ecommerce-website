@@ -26,10 +26,11 @@ const Header=(props)=> {
                     <Nav.Link as={Link} to="/login">LOGIN</Nav.Link>
                 </Nav>
                 {isLoggedIn && (<li>
-            <Button variant="outline-primary" onClick={logOutHandler}>Logout</Button>
+            <Button variant="danger" onClick={logOutHandler}>Logout</Button>
           </li>)}
             </Container>
             <HeaderCartButton onClick={props.onShowCart}/>
+           
             <h2>.</h2>
        </Navbar>
        

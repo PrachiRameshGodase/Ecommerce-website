@@ -20,6 +20,8 @@ const LoginForm = () => {
   const submitHandler=(event)=>{
     event.preventDefault()
     const enteredEmail=emailInputRef.current.value;
+    //we pass email from here it is hard coded
+    localStorage.setItem("email",enteredEmail)
     const enteredPassword=passwordInpurRef.current.value
     setIsLoading(true)
     let url;

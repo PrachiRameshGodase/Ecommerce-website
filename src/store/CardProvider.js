@@ -7,44 +7,7 @@ export default function CartProvider(props) {
     totalAmount: 0,
   });
 
-  //The callback function returns true if condition satisfies, then findIndex returns the first index that satisfies the condtion
-  // const addItemToCartHandler = (item) => {
-  //   const existingCartItemIndex = cartContext.items.findIndex(
-  //     (cartItem) => cartItem.id === item.id
-  //   );
-
-  //   //Using the index from which we are getting into existingCartItem's index
-  //   const existingCartItem = cartContext.items[existingCartItemIndex];
-
-  //   let updatedItems;
-
-  //   //If existingCartItem exist in the array, we return updateItem with +1 amount
-  //   //We can not access an particular property of an object and change it, we have ha access all the the object using spread operator, and then we can change desired property
-
-  //   if (existingCartItem) {
-  //     const updatedItem = {
-  //       ...existingCartItem,
-  //       amount: existingCartItem.amount + 1,
-  //     };
-  //     updatedItems = [...cartContext.items];
-  //     //Putting new Item in the updated item
-  //     updatedItems[existingCartItemIndex] = updatedItem;
-  //   } else {
-  //     // If an existing item is not found, add the new item to the array
-  //     updatedItems = cartContext.items.concat(item);
-  //   }
-
-  //   //Total= 'prev total already present' + 'Current item price'
-  //   const updatedTotalAmount = Number(cartContext.totalAmount) + Number(item.price);
-
-  //   const updatedCartContext = {
-  //     items: updatedItems,
-  //     totalAmount: updatedTotalAmount,
-  //   };
-
-  //   //Updating the State with state updating function
-  //   setCartContext(updatedCartContext);
-  // };
+  
   const addItemToCartHandler = (item) => {
     const existingCartItemIndex = cartContext.items.findIndex(
       (cartItem) => cartItem.id === item.id
@@ -83,6 +46,7 @@ export default function CartProvider(props) {
   
     setCartContext(updatedCartContext);
   };
+ 
   
   const removeItemFromCartHandler = (id) => {
     // Find the index of the item to be removed
