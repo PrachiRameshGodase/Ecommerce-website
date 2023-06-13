@@ -2,7 +2,14 @@ import React, { useState, useContext } from "react";
 import {Routes, Route, Navigate } from 'react-router-dom';
 import Cart from "./components/Cart/Cart";
 import Header from './components/Layout/Header';
+
 import AvailableProducts from "./components/Products/AvailableProducts"
+import AvailableProducts2 from "./components/Products/AvailableProducts2";
+import AvailableProducts3 from "./components/Products/AvailableProducts3";
+import AvailableProducts4 from "./components/Products/AvailableProducts4";
+import AvailableProducts5 from "./components/Products/AvailableProducts5";
+
+
 import About from "./components/Pages/About";
 import Home from "./components/Pages/Home";
 import ContactUs from "./components/Pages/ContactUs";
@@ -12,6 +19,7 @@ import AuthContext from "./store/auth-context";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import CartProvider from "./store/CardProvider";
+
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
@@ -26,6 +34,7 @@ function App() {
   };
 
   return (
+    <>
     <CartProvider>
       
       
@@ -40,15 +49,32 @@ function App() {
           {!authCtx.isLoggedIn && <Route path="/login" element={<LoginForm />} />}
 
           <Route path="/product"
-        element={authCtx.isLoggedIn ? (<AvailableProducts />) : 
-        (<Navigate to="/login" replace />)}/>
+            element={authCtx.isLoggedIn ? (<AvailableProducts />) : 
+          (<Navigate to="/login" replace />)}/>
         
-
+        <Route path="/product/womensFasion"
+            element={authCtx.isLoggedIn ? (<AvailableProducts2 />) : 
+          (<Navigate to="/login" replace />)}/>
+        
+        <Route path="/product/kidsFashion"
+            element={authCtx.isLoggedIn ? (<AvailableProducts3 />) : 
+          (<Navigate to="/login" replace />)}/>
+        
+        <Route path="/product/footWear"
+            element={authCtx.isLoggedIn ? (<AvailableProducts4 />) : 
+          (<Navigate to="/login" replace />)}/>
+        
+        <Route path="/product/sweet"
+            element={authCtx.isLoggedIn ? (<AvailableProducts5 />) : 
+          (<Navigate to="/login" replace />)}/>
+        
           <Route path="/product/:imageUrl" element={<ProductDetails />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
-      
+         
     </CartProvider>
+    
+    </>
   );
 }
 

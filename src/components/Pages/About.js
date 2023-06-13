@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import aiImage from "../../assests/Band Members1.png";
+// import aiImage from "../../assests/Band Members1.png";
 import classes from "../Products/AvailableProducts.module.css"
 import "./About.css"
 
@@ -14,7 +14,7 @@ const About = () => {
       <div  className='Div1'>
       <Row>
         <Col>
-          <Image src={aiImage} fluid alt="About" className='shadow-lg' style={{ width: '200px', height: '200px', float:"left",borderRadius:"50%",margin:"20px 50px"}}/>
+          <Image  fluid alt="About" className='shadow-lg' style={{ width: '200px', height: '200px', float:"left",borderRadius:"50%",margin:"20px 50px"}}/>
         </Col>
       </Row>
       <Row>

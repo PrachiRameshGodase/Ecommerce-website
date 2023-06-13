@@ -21,3 +21,9 @@ margin-top: 70px;
     width: 15rem;
     height: 15rem
 }
+.changer{
+    display:flex;
+    justify-content: center;
+    gap:0.5rem;
+    margin-top:0.5rem
+}

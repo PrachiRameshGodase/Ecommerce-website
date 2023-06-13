@@ -16,7 +16,7 @@ function Cart(props) {
   
   
   async function  fetchCartItems() {
-    const response = await axios.get(`https://crudcrud.com/api/f722c9455d6d443ca09a29194127f669/${updatedEmail}`);
+    const response = await axios.get(`https://crudcrud.com/api/c3d5487e3a6048789a803633209dfc27/${updatedEmail}`);
     console.log(response.data)
     const cartItems = response.data.map((item) => {
       return {
@@ -25,7 +25,7 @@ function Cart(props) {
         price: item.price,
         image: item.imageUrl,
         amount:item.amount,
-      };
+    };
       
     });
     setCartItems(cartItems);
@@ -48,7 +48,7 @@ const totalAmount = cartItems.reduce((total, item) => {
 async function cartItemRemoveHandler(id){
   console.log(id,updatedEmail)
   
-  await axios.delete(`https://crudcrud.com/api/f722c9455d6d443ca09a29194127f669/${updatedEmail}/${id}`)
+  await axios.delete(`https://crudcrud.com/api/c3d5487e3a6048789a803633209dfc27/${updatedEmail}/${id}`)
   // cartCtx.removeItem(id)
   fetchCartItems();
   };

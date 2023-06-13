@@ -1,88 +1,37 @@
-import React from 'react';
-import Table from 'react-bootstrap/Table';
-import Button from 'react-bootstrap/Button';
-import { Container, Row, Col, Image } from 'react-bootstrap';
-import { BsPlay } from 'react-icons/bs';
-import classes from "./Home.module.css";
+import Carousel from 'react-bootstrap/Carousel';
+import image1 from "../../assests6/9-98563_ecommerce-website-development-ecommerce-website-banner-design-hd.png"
+import image2 from "../../assests6/images3.jpg"
+// import image3 from "../../assests6/Mobile-Banner_Loved-gifting_Banner-700x910.webp"
 
-
-const Home = () => {
+function Home() {
   return (
-    <div>
-    {/* <Container className="text-center"> */}
-         <div className={classes.border}>
-            <h1 className={classes.Label}>The Generics</h1>
-            
-            <Row> 
-                <Col>
-                    <Button variant="outline-primary" className="shadow-lg text-center">Get Our Latest Album</Button>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                    <Button variant="outline-primary" className="rounded-circle text-center"><BsPlay /></Button>
-                </Col>
-            </Row>
-            
-        </div>
-        <Container className="text-center">
-        <Row>
-                <Col>
-                    <h1>Tours</h1>
-                </Col>
-        </Row>
-        
-      <Row>
-        <Col>
-          <Table striped bordered hover>
-      <tbody>
-        <tr>
-          <td>JUL16</td>
-          <td>MarkDETROIT, MI</td>
-          <td>DTE ENERGY MUSIC THEATRE</td>
-          <td><Button variant="primary">BUY TICKETS</Button></td>
-        </tr>
-        <tr>
-          <td>JUL19</td>
-          <td>TORONTO,ON</td>
-          <td>BUDWEISER STAGE</td>
-          <td><Button variant="primary">BUY TICKETS</Button></td>
-        </tr>
-        <tr>
-          <td>JUL 22</td>
-          <td>BRISTOW, VA</td>
-          <td>JIGGY LUBE LIVE</td>
-          <td><Button variant="primary">BUY TICKETS</Button></td>
-        </tr>
-        <tr>
-          <td>JUL 29</td>
-          <td>PHOENIX, AZ</td>
-          <td>AK-CHIN PAVILION</td>
-          <td><Button variant="primary">BUY TICKETS</Button></td>
-        </tr>
-        <tr>
-          <td>AUG 2</td>
-          <td>LAS VEGAS, NV</td>
-          <td>T-MOBILE ARENA</td>
-          <td><Button variant="primary">BUY TICKETS</Button></td>
-        </tr>
-        <tr>
-          <td>AUG 7</td>
-          <td>CONCORD, CA</td>
-          <td>CONCORD PAVILION</td>
-          <td><Button variant="primary">BUY TICKETS</Button></td>
-        </tr>
-      </tbody>
-    </Table>
-        </Col>
-      </Row>
+    <Carousel>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={image1}
+          alt="First slide"
+        />
+        <Carousel.Caption>
+          {/* <h3>First slide label</h3> */}
+          {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+      {/* <Carousel.Item style={{width:"900px"}}>
+        <img
+          className="d-block w-100"
+          src={image2}
+          alt="Second slide"
+        />
+
+        <Carousel.Caption> */}
+          {/* <h3>Second slide label</h3> */}
+          {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+        {/* </Carousel.Caption>
+      </Carousel.Item> */}
       
-    </Container>
-    <h1 className={classes.bottom}>The Generics</h1>
-    </div>
-    
-    
+    </Carousel>
   );
-};
+}
 
 export default Home;
