@@ -44,6 +44,7 @@ const LoginForm = () => {
         setIsLoading(false)
         if(res.ok){
           return res.json();
+          
         }else{
           return res.json().then((data)=>{
             //show error
@@ -69,7 +70,7 @@ const LoginForm = () => {
   
   return (
     <section className={classes.auth}>
-      <h1>{isLogin ? 'Login' : 'Sign Up'}</h1>
+      <h1>{isLogin ? 'Log in to Eccommerce' : 'SIGN UP'}</h1>
       <form onSubmit={submitHandler}>
         <div className={classes.control}>
           <label htmlFor='email'>Your Email</label>

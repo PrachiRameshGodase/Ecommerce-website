@@ -37,9 +37,9 @@ function ConatctUsForm(props) {
 
   return (
     <>
-    <h1 className={classes.Label}>The Generics</h1>
+    
     <div className={classes.container}>
-        <h1 className='h1-label'>Contact Us</h1>
+        <h1 className={classes.h1}>Contact Us</h1>
       <form className={classes.form} onSubmit={submitHandler}>
         <div className={classes.control}>
           <label htmlFor='name'>Name</label>
@@ -56,7 +56,7 @@ function ConatctUsForm(props) {
         <button className='button'>Submit</button>
       </form>
     </div>
-    <h1 className={classes.bottom}>The Generics</h1>
+ 
     
     </>
   );

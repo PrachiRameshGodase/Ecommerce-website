@@ -19,6 +19,7 @@ import AuthContext from "./store/auth-context";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import CartProvider from "./store/CardProvider";
+import Footer from "./components/Pages/Footer";
 
 
 function App() {
@@ -73,6 +74,8 @@ function App() {
         </Routes>
          
     </CartProvider>
+
+    <Footer/>
     
     </>
   );

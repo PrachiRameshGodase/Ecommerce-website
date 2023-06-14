@@ -4,3 +4,8 @@
     flex-direction: row;
 justify-content: space-between;
 } */
+
+.Label{
+    margin-top: 60px;
+    text-align: center;
+}

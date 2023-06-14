@@ -15,8 +15,8 @@ const price = `₹${props.price.toFixed(2)}`;
           <span className={classes.amount}>x 1{props.amount}</span>
         </div>
       </div>
-      <div >
-      <Button onClick={props.onRemove} variant="outline-warning">Remove</Button>{' '}
+      <div className={classes.actions}>
+      <Button onClick={props.onRemove} variant="denger">-</Button>{' '}
         
       </div>
     </li>

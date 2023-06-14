@@ -4,10 +4,12 @@ import Modal from '../UI/Modal';
 import Button from 'react-bootstrap/Button';
 import CartContext from '../../store/cart-context';
 import CartItem from './CartItem';
+import { Alert } from 'react-bootstrap';
 import axios from 'axios';
 
 function Cart(props) {
   const cartCtx = useContext(CartContext);
+  const [showAlert, setShowAlert] = useState(false);
   const [cartItems, setCartItems] = useState([]);
 
   const enteredEmail = localStorage.getItem('email');
@@ -16,7 +18,7 @@ function Cart(props) {
   
   
   async function  fetchCartItems() {
-    const response = await axios.get(`https://crudcrud.com/api/c3d5487e3a6048789a803633209dfc27/${updatedEmail}`);
+    const response = await axios.get(`https://crudcrud.com/api/1f399784f37246e79554e3c1d0fc0ac0/${updatedEmail}`);
     console.log(response.data)
     const cartItems = response.data.map((item) => {
       return {
@@ -48,7 +50,7 @@ const totalAmount = cartItems.reduce((total, item) => {
 async function cartItemRemoveHandler(id){
   console.log(id,updatedEmail)
   
-  await axios.delete(`https://crudcrud.com/api/c3d5487e3a6048789a803633209dfc27/${updatedEmail}/${id}`)
+  await axios.delete(`https://crudcrud.com/api/1f399784f37246e79554e3c1d0fc0ac0/${updatedEmail}/${id}`)
   // cartCtx.removeItem(id)
   fetchCartItems();
   };
@@ -68,6 +70,10 @@ async function cartItemRemoveHandler(id){
     />
   ));
 
+  const OrderHandler=()=>{
+    setShowAlert(true);
+  }
+
   return (
     <Modal onClose={props.onClose}>
       {cartItems.length > 0 ? (
@@ -79,14 +85,22 @@ async function cartItemRemoveHandler(id){
         <span>Total Amount</span>
         <span>₹{totalAmount}</span>
       </div>
-      <div>
+      <div className={classes.actions}>
         {hasItems && (
           <Button variant="warning" onClick={props.onClose}>
             Close
           </Button>
         )}
-        <Button variant="primary">PURCHASE</Button>{' '}
+        <Button variant="danger" onClick={OrderHandler}>Order</Button>{' '}
       </div>
+      <Alert
+        variant="success"
+        show={showAlert}
+        onClose={() => setShowAlert(false)}
+        dismissible
+      >
+        Thanks for shopping with us!.
+      </Alert>
     </Modal>
   );
 }
