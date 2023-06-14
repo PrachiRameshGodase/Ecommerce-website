@@ -4,6 +4,8 @@ import Modal from '../UI/Modal';
 import Button from 'react-bootstrap/Button';
 import CartContext from '../../store/cart-context';
 import CartItem from './CartItem';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Alert } from 'react-bootstrap';
 import axios from 'axios';
 
@@ -51,6 +53,7 @@ async function cartItemRemoveHandler(id){
   console.log(id,updatedEmail)
   
   await axios.delete(`https://crudcrud.com/api/1f399784f37246e79554e3c1d0fc0ac0/${updatedEmail}/${id}`)
+  toast.error("Item is deleted successfully!")
   // cartCtx.removeItem(id)
   fetchCartItems();
   };
@@ -75,6 +78,7 @@ async function cartItemRemoveHandler(id){
   }
 
   return (
+    <>
     <Modal onClose={props.onClose}>
       {cartItems.length > 0 ? (
         <ul className={classes['cart-items']}>{cartItemList}</ul>
@@ -102,6 +106,8 @@ async function cartItemRemoveHandler(id){
         Thanks for shopping with us!.
       </Alert>
     </Modal>
+    <ToastContainer theme="colored"/>
+    </>
   );
 }
 

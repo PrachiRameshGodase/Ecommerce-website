@@ -2,6 +2,9 @@ import React,{useContext} from 'react'
 import { Container, Row, Button, Col,Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+  
 
 import image1 from "../../assests1/Denim Jacket.jpg"
 import image2 from "../../assests1/Traditional.jpg"
@@ -81,6 +84,7 @@ const AvailableProducts=()=>{
       image : item.imageUrl,
       amount: item.amount,
     });
+    toast.success("Item is added successfully!")
     // storing cart item do post request from API
     try {
       // ... existing code ...
@@ -89,6 +93,7 @@ const AvailableProducts=()=>{
         item
       );
       console.log(response.data);
+      // toast.success("Item is added successfully!")
       
     } catch (error) {
       console.log('AxiosError:', error);
@@ -134,7 +139,7 @@ const AvailableProducts=()=>{
       <span>1</span>
       <Button variant='info' onClick={nexButtonHandler}>Next</Button>
       </div>
-     
+      <ToastContainer theme="colored"/>
     </>
   );
 };

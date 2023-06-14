@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import CartContext from '../../store/cart-context'
 import classes from "./AvailableProducts.module.css"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import image1 from"../../assests2/Leather Jacket.jpg"
 import image2 from"../../assests2/MJ112720tandon-Friday-1092-6ad8260df26d4f1c94728f86484f49f4.jpg"
@@ -78,6 +80,7 @@ const AvailableProducts2=()=>{
       image : item.imageUrl,
       amount: item.amount,
     });
+    toast.success("Item is added successfully!")
     // storing cart item do post request from API
     try {
       // ... existing code ...
@@ -128,7 +131,7 @@ const AvailableProducts2=()=>{
       <span>2</span>
       <Button variant='info' onClick={nexButtonHandler}>Next</Button>
       </div>
-     
+      <ToastContainer theme="colored"/>
     </>
   );
 };
