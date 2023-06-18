@@ -8,8 +8,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import image1 from"../../assests2/Leather Jacket.jpg"
-import image2 from"../../assests2/MJ112720tandon-Friday-1092-6ad8260df26d4f1c94728f86484f49f4.jpg"
-import image3 from"../../assests2/Top-Quality-Sets-Ladies-Office-Formal-Wear-Women-Business-Suit.jpg"
+import image2 from"../../assests2/wedding.jpg"
+import image3 from"../../assests2/Women-Business-Suit.jpg"
 import image4 from"../../assests2/off-shoulder-short-sleeve-plus-size.webp"
 import image5 from"../../assests2/semiformal.webp"
 import image6 from"../../assests2/Saree.webp"

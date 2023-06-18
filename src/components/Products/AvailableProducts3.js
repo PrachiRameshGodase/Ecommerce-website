@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import CartContext from '../../store/cart-context'
 import classes from "./AvailableProducts.module.css"
 import image1 from"../../assests3/Baby-Couture.jpg"
-import image2 from"../../assests3/Arsha-lifestyle-Boy-Girls-t-shirt-H-1-350x467.jpg"
+import image2 from"../../assests3/boy-girl.jpg"
 import image3 from"../../assests3/Kids Royality.jpg"
 import image4 from"../../assests3/New fasion.jpg"
 import image5 from"../../assests3/Polka Dot cake.jpg"

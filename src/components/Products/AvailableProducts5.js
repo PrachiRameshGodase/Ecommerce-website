@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import image1 from"../../assests5/Chocolate laddu.jpg"
 import image2 from"../../assests5/Cake.jpg"
 import image3 from"../../assests5/Dairy milk.jpg"
-import image4 from"../../assests5/chocolate-covered-strawberries-683x1024.jpg"
+import image4 from"../../assests5/strawberries.jpg"
 import image5 from"../../assests5/Rasgulla.jpg"
 import image6 from"../../assests5/Panna Cotta.jpg"
 import image7 from"../../assests5/Pakeeza.jpg"
