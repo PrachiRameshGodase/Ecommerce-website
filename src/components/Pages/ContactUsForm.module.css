@@ -1,75 +1,71 @@
 .container {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  
-  .form {
-    /* margin-top: 70px; */
-    margin-top: 2rem ;
-    margin-bottom: 70px;
-    width: 550px;
-    max-width: 100%;
-    padding: 1rem;
-    /* background-color: #f1deee; */
-    border-radius: 10px;
-  }
-  
-  /* .form .control {
+.form {
+  /* margin-top: 70px; */
+  margin-top: 2rem;
+  margin-bottom: 70px;
+  width: 550px;
+  max-width: 100%;
+  padding: 1rem;
+  /* background-color: #f1deee; */
+  border-radius: 10px;
+}
+
+/* .form .control {
     margin-bottom: 1rem;
   } */
-  .h1{
-    margin-top: 70px;
-    text-transform:capitalize;
-    
-  }
-  
-  .form .control label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: #280722;
-  }
-  
-  .form .control input,
-  .form .control textarea {
-    width: 100%;
-    padding: 0.5rem;
-    font: inherit;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form .control input:focus
-  {
-    outline: none;
-    box-shadow: 0 2px 5px rgba(35, 0, 82, 0.2);
-  }
-  
-  .form button {
-    /* display: block; */
-    width: 20%;
-    padding: 0.5rem;
-    font: inherit;
-    color: #ffffff;
-    background-color: rgb(198, 18, 18);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 35%;
-  }
-  
-  .form button:hover,
-  .form button:focus {
-    background-color: #3f006a;
-  }
+.h1 {
+  margin-top: 70px;
+  text-transform: capitalize;
+}
 
-  /* ContactUsForm.module.css */
+.form .control label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #280722;
+}
+
+.form .control input,
+.form .control textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font: inherit;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form .control input:focus {
+  outline: none;
+  box-shadow: 0 2px 5px rgba(35, 0, 82, 0.2);
+}
+
+.form button {
+  /* display: block; */
+  width: 20%;
+  padding: 0.5rem;
+  font: inherit;
+  color: #ffffff;
+  background-color: rgb(198, 18, 18);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 35%;
+}
+
+.form button:hover,
+.form button:focus {
+  background-color: #3f006a;
+}
+
+/* ContactUsForm.module.css */
 
 @keyframes colorChange {
   0% {
@@ -86,5 +82,3 @@
 .animateText {
   animation: colorChange 3s infinite alternate; /* Apply the animation to the text */
 }
-
-  

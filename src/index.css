@@ -1,12 +1,10 @@
+body {
+  background-image: url(assests7/images.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
-body{
-    background-image: url(assests7/images.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    background-color: brown
+  background-color: brown;
 }
-
 
 @tailwind base;
 @tailwind components;

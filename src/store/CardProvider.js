@@ -7,17 +7,16 @@ export default function CartProvider(props) {
     totalAmount: 0,
   });
 
-  
   const addItemToCartHandler = (item) => {
     const existingCartItemIndex = cartContext.items.findIndex(
       (cartItem) => cartItem.id === item.id
     );
-  
+
     // Get the existingCartItem object
     const existingCartItem = cartContext.items[existingCartItemIndex];
-  
+
     let updatedItems;
-  
+
     if (existingCartItem) {
       // If existingCartItem exists in the array, update the amount
       const updatedItem = {
@@ -34,20 +33,18 @@ export default function CartProvider(props) {
         amount: 1,
       });
     }
-  
+
     // Calculate the new total amount
-    const updatedTotalAmount =
-      cartContext.totalAmount + item.price;
-  
+    const updatedTotalAmount = cartContext.totalAmount + item.price;
+
     const updatedCartContext = {
       items: updatedItems,
       totalAmount: updatedTotalAmount,
     };
-  
+
     setCartContext(updatedCartContext);
   };
- 
-  
+
   const removeItemFromCartHandler = (id) => {
     // Find the index of the item to be removed
     const itemIndex = cartContext.items.findIndex((item) => item.id === id);
@@ -78,13 +75,12 @@ export default function CartProvider(props) {
     setCartContext(updatedCartContext);
   };
 
-  const clearCartHandler=()=>{
+  const clearCartHandler = () => {
     setCartContext({
       items: [],
       totalAmount: 0,
-    })
-  }
-
+    });
+  };
 
   const cartContextValue = {
     items: cartContext.items,

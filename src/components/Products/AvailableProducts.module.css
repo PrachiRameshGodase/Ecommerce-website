@@ -1,29 +1,27 @@
-.container{
-margin-top: 70px;
-
+.container {
+  margin-top: 70px;
 }
 .cardBody {
-    display: flex;
-    align-items: center;
-    
-}
-  
-.price {
-    font-weight: bold;
-    margin-bottom: 0.25rem;
-}
-.button {
-    margin-top: 0.25rem;
-     margin-left: 5.2rem;
+  display: flex;
+  align-items: center;
 }
 
-.card{
-    width: 15rem;
-    height: 15rem
+.price {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
 }
-.changer{
-    display:flex;
-    justify-content: center;
-    gap:0.5rem;
-    margin-top:0.5rem
+.button {
+  margin-top: 0.25rem;
+  margin-left: 5.2rem;
+}
+
+.card {
+  width: 15rem;
+  height: 15rem;
+}
+.changer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
 }

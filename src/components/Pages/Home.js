@@ -11,6 +11,20 @@ return (
   <>
     <Carousel fade className="">
     <Carousel.Item>
+      <img style={{ height: '750px' }}
+        className="d-block w-100"
+        src='https://images.unsplash.com/photo-1559563458-527698bf5295?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFjY2Vzc29yeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
+        alt="Third slide"
+      />
+
+      <Carousel.Caption style={{color:"black"}}>
+        <h3>Accessory Sale</h3>
+        <p>
+        Don't miss out on our limited time offer: 20% off all accessories! From statement earrings to trendy handbags, we have everything you need to complete your look. Shop now and save big!
+        </p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item>
     
       <img style={{ height: '750px' }}
         className="d-block w-100 "
@@ -34,20 +48,7 @@ return (
         <p>Upgrade your wardrobe with our stylish and comfortable activewear. Whether you're hitting the gym or going for a run, our collection of leggings, tops, and sports bras will keep you looking and feeling your best</p>
       </Carousel.Caption>
     </Carousel.Item>
-    <Carousel.Item>
-      <img style={{ height: '750px' }}
-        className="d-block w-100"
-        src='https://images.unsplash.com/photo-1559563458-527698bf5295?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFjY2Vzc29yeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'
-        alt="Third slide"
-      />
-
-      <Carousel.Caption style={{color:"black"}}>
-        <h3>Accessory Sale</h3>
-        <p>
-        Don't miss out on our limited time offer: 20% off all accessories! From statement earrings to trendy handbags, we have everything you need to complete your look. Shop now and save big!
-        </p>
-      </Carousel.Caption>
-    </Carousel.Item>
+    
   </Carousel>
 
   </>

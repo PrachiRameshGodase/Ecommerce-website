@@ -51,8 +51,8 @@ function Footer() {
                 
         
         <div className={classes.hr}>
-        <Link to='/privacy' style={{textAlign:"center",textDecoration:"none",color:"black",marginLeft:"42%"}} className={classes.animateText}>Privacy Policy | </Link>
-        <Link to='/privacy' style={{textAlign:"center",textDecoration:"none",color:"black",marginRight:"40%",marginLeft:"2px"}} className={classes.animateText}>Terms & Condition</Link>
+        <Link to='/privacy' style={{textAlign:"center",textDecoration:"none",color:"black",marginLeft:"42%"}} className={classes.animateText}>Privacy Policy | |</Link>
+        <Link to='/terms' style={{textAlign:"center",textDecoration:"none",color:"black",marginRight:"40%",marginLeft:"2px"}} className={classes.animateText}>Terms & Condition</Link>
             <hr className={classes.horizontal}/>
             
             <div>
