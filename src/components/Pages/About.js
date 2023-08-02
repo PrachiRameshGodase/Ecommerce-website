@@ -1,37 +1,47 @@
 import React from 'react';
-
-// import aiImage from "../../assests/Band Members1.png";
-// import classes from "../Products/AvailableProducts.module.css"
-import "./About.css"
-
+import './About.css';
+import image2 from "../../assests7/final.jpg"
 
 const About = () => {
   return (
-    <div>
-   <h2 className="Label">This is Home Page </h2>
-      <p>
-        Lorem ipsum carrots enhanced rebates. Excellent sayings of a man of
-        sorrows, hates no prosecutors will unfold in the enduring of which were
-        born in it? Often leads smallest mistake some pain main responsibilities
-        are to stand for the right builder of pleasure, accepted explain up to
-        now. , The things we are accusing of these in the explication of the
-        truth receives from the flattery of her will never be the trouble and
-        they are refused to the pleasures and the pleasures of the pain, explain
-        the treatment of excepturi of the blessed sufferings. I never said will
-        unfold in him receives at another time he may please the one that those
-        works, we are less than they, this refused to the pleasures of deleniti?
-        Those are! Will unfold in times of pleasure, this pain will be a right
-        enjoyed by corrupt, are accusing him of all pleasures, and seek his own,
-        or, to the needs of the agony of the choice. We hate the fellow. Lorem
-        ipsum dolor, sit amet consectetur rebates. The distinction, that arise
-        from or to. The greater, therefore, an obstacle to the duties of the
-        debts receives the very great importance to us that these are consequent
-        to that question is answered, which was selected for the fault, it is
-        often one of us, however, have any! Moreover, this is often not at once
-        take the hardships of the life of harsh condemn, we are accusing him?
-        Him whom something large cisterns.
-      </p>
+
+    <>
+     <div className="about-container">
+      <div className="about-image">
+        <img src={image2} alt="Online Shopping" />
       </div>
+      <div className="about-content">
+        <h2 className='animateText'>Welcome to Online Shopping!</h2>
+        <p>
+          We believe in providing you with a delightful shopping experience and a wide range of high-quality products to choose from. Our online platform brings together the best in women's clothing, men's clothing, footwear, and sweet dishes, ensuring that you find something perfect for every occasion. We also have a dedicated kid's section to cater to our little customers' needs.
+        </p>
+        <p>
+          Our journey began with a passion for offering unique and stylish products that reflect the latest trends while maintaining exceptional quality. We understand that clothing and accessories are more than just items; they represent individuality and personal style. That's why we curate our collection meticulously, ensuring that every piece meets our high standards and exceeds your expectations.
+        </p>
+        <p>
+          We are proud to offer a diverse range of products that cater to different tastes and preferences. From trendy dresses and comfortable activewear to stylish suits and accessories for men, our clothing section is designed to keep you looking your best. Our footwear collection combines fashion and comfort, ensuring that you step out in style wherever you go. And for those moments of indulgence, our sweet dishes will satisfy your cravings with their irresistible flavors.
+        </p>
+        <p>
+          Don't just take our word for it; here's what some of our happy customers have to say:
+        </p>
+        <blockquote className="customer-testimonial">
+          "Customer Testimonial" - Rutu Patil
+        </blockquote>
+        <p>
+          We would love for you to explore our product pages and discover the perfect items that suit your style and needs. Whether you're looking for an elegant dress, a comfortable pair of shoes, or a delicious treat, we have something for everyone.
+        </p>
+        <p>
+          If you have any questions or need assistance, please don't hesitate to reach out to us. You can contact us, and we'll be more than happy to help.
+        </p>
+        <p>
+          Thank you for choosing Online Shopping. Happy shopping!
+        </p>
+      </div>
+    </div>
+    
+
+      
+    </>
   );
 };
 

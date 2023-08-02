@@ -19,41 +19,41 @@ import image8 from"../../assests4/Flip floop.webp"
 import axios from "axios";
 const productsArr = [
     {   id:1,
-        title: 'Kolapuri Brand',
+        title: 'KOLHAPURI BRAND',
         price: 2299,
         imageUrl: image1,
     },
     {   id:2,
-        title:'Wedding special',
+        title:'WEDDING SPECIAL',
         price: 3000,
         imageUrl: image2,
     },
     {   id:3,
-        title: 'Pencil-Hills',
+        title: 'PENCIL-HILLS',
         price: 1999,
         imageUrl: image3,
     },
     {   id:4,
-        title: 'women formal',
+        title: 'WOMEN FORMAL',
         price: 999,
         imageUrl: image4,
     }, {   id:1,
-        title: 'Mens Formal',
+        title: 'MENS FORMAL',
         price: 1499,
         imageUrl: image5,
     },
     {   id:2,
-        title: 'Nike shoes',
+        title: 'NIKE SHOES',
         price: 3999,
         imageUrl: image6,
     },
     {   id:3,
-        title: 'best-footwear-in-mansoon',
+        title: 'BEST-FOOTWEAR-IN-MANSOON',
         price: 299,
         imageUrl: image7,
     },
     {   id:4,
-        title: 'Flip floop',
+        title: 'FLIP FLOOP',
         price: 599,
         imageUrl: image8,
     }
@@ -83,7 +83,7 @@ const AvailableProducts4=()=>{
     try {
       // ... existing code ...
       const response = await axios.post(
-        `https://crudcrud.com/api/1f399784f37246e79554e3c1d0fc0ac0/${updatedEmail}`,
+        `https://crudcrud.com/api/4910f3b0671f47b99c71989ddf0486c0/${updatedEmail}`,
         item
       );
       console.log(response.data);
@@ -127,7 +127,7 @@ const AvailableProducts4=()=>{
 
       <div className={classes.changer}>
       <Button variant='info' onClick={prevButtonHandler}>Prev</Button>
-      <span>4</span>
+      <span style={{marginTop:"4px"}}>4</span>
       <Button variant='info' onClick={nexButtonHandler}>Next</Button>
       </div>
       <ToastContainer theme="colored"/>

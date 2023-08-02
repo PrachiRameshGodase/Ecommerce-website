@@ -20,6 +20,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import CartProvider from "./store/CardProvider";
 import Footer from "./components/Pages/Footer";
+import Privacy from "./components/Pages/Privacy";
 
 
 function App() {
@@ -68,6 +69,10 @@ function App() {
         <Route path="/product/sweet"
             element={authCtx.isLoggedIn ? (<AvailableProducts5 />) : 
           (<Navigate to="/login" replace />)}/>
+
+          <Route path="/privacy" element={<Privacy/>}/>
+
+          
         
           <Route path="/product/:imageUrl" element={<ProductDetails />} />
           <Route path="*" element={<Navigate to="/" />} />

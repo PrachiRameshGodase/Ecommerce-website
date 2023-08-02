@@ -3,12 +3,14 @@ import classes from "./Footer.module.css"
 import { FaTwitter,FaInstagram, FaYoutube } from 'react-icons/fa';
 import { Button, NavLink } from 'react-bootstrap'
 import image from "../../assests5/images2.jpg"
+import { Link } from 'react-router-dom';
+
 
 
 function Footer() {
   return (
     <>
-        <footer className={classes.footer}>
+        <footer className={`bg-gradient-to-b from-pink-400 to-violet-900  ${classes.footer}`}>
         <div className={classes.start}>
         <div className={classes.col}>
             <img src={image}></img>
@@ -39,13 +41,23 @@ function Footer() {
         <div className={classes.col}>
             <h4>Call Us..</h4>
             <h5> +91 9876543210</h5>
+          
 
         </div>
+        
+        
         </div>
+           
+                
         
         <div className={classes.hr}>
+        <Link to='/privacy' style={{textAlign:"center",textDecoration:"none",color:"black",marginLeft:"42%"}} className={classes.animateText}>Privacy Policy | </Link>
+        <Link to='/privacy' style={{textAlign:"center",textDecoration:"none",color:"black",marginRight:"40%",marginLeft:"2px"}} className={classes.animateText}>Terms & Condition</Link>
             <hr className={classes.horizontal}/>
+            
             <div>
+                
+                {/* <Link to='/privacy' style={{textAlign:"center",textDecoration:"none",color:"black"}}>Privacy Policy</Link> */}
                <p style={{textAlign:"center"}}>@{new Date().getFullYear()} Online Shopping. All Rights Reserved</p> 
             </div>
            

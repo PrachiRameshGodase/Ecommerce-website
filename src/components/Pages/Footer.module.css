@@ -2,7 +2,7 @@
 
 footer{
     bottom: 0;
-    background: linear-gradient(to right,#00093c,#2d0b00);
+    /* background: linear-gradient(to right,); */
     color: #fff;
     padding: 1.5rem 0.5rem;
     border-top-left-radius: 125px;
@@ -49,7 +49,7 @@ input{
 }
   
   .instagram {
-    color: #c32aa3;
+    color: #f429c8;
     margin-left: 1rem;
     
   }
@@ -79,3 +79,23 @@ input{
   img{
     margin-bottom: 0.5rem;
   }
+
+  @keyframes colorChange {
+    0% {
+      color: yellow; /* Starting color */
+    }
+    50% {
+      color: rgb(247, 174, 174); /* Intermediate color */
+    }
+    80% {
+      color: #e7eece; /* Intermediate color */
+    }
+    100% {
+      color: red; /* Final color */
+    }
+  }
+  
+  .animateText {
+    animation: colorChange 3s infinite alternate; /* Apply the animation to the text */
+  }
+  

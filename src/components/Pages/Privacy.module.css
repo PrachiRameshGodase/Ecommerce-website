@@ -1,0 +1,19 @@
+@keyframes colorChange {
+    0% {
+      color: yellow; /* Starting color */
+    }
+    50% {
+      color: red; /* Intermediate color */
+    }
+    80% {
+      color: red; /* Intermediate color */
+    }
+    100% {
+      color: #0000ff; /* Final color */
+    }
+  }
+  
+  .animateText {
+    animation: colorChange 3s infinite alternate; /* Apply the animation to the text */
+  }
+  

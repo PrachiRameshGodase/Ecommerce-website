@@ -18,41 +18,41 @@ import image8 from"../../assests3/baby formal.webp"
 import axios from "axios";
 const productsArr = [
     {   id:1,
-        title: 'Baby-Couture',
+        title: 'BABY-COUTURE',
         price: 1299,
         imageUrl: image1,
     },
     {   id:2,
-        title: 't-shirt',
+        title: 'T-SHIRT',
         price: 400,
         imageUrl: image2,
     },
     {   id:3,
-        title: 'Kids Royality',
+        title: 'KIDS ROYALITY',
         price: 1999,
         imageUrl: image3,
     },
     {   id:4,
-        title: 'New fasion',
+        title: 'NEW FASION',
         price: 999,
         imageUrl: image4,
     }, {   id:1,
-        title: 'Polka Dot cake',
+        title: 'POLKA DOT CAKE',
         price: 2499,
         imageUrl: image5,
     },
     {   id:2,
-        title: 'Tshirt',
+        title: 'TSHIRT',
         price: 399,
         imageUrl: image6,
     },
     {   id:3,
-        title: 'Toy Ballon',
+        title: 'TOY BALLON',
         price: 1299,
         imageUrl: image7,
     },
     {   id:4,
-        title: 'Formal',
+        title: 'FORMAL',
         price: 2599,
         imageUrl: image8,
     }
@@ -85,7 +85,7 @@ const AvailableProducts3=()=>{
     try {
       // ... existing code ...
       const response = await axios.post(
-        `https://crudcrud.com/api/1f399784f37246e79554e3c1d0fc0ac0/${updatedEmail}`,
+        `https://crudcrud.com/api/4910f3b0671f47b99c71989ddf0486c0/${updatedEmail}`,
         item
       );
       console.log(response.data);
@@ -128,7 +128,7 @@ const AvailableProducts3=()=>{
       </Container>
       <div className={classes.changer}>
       <Button variant='info' onClick={prevButtonHandler}>Prev</Button>
-      <span>3</span>
+      <span style={{marginTop:"4px"}}>3</span>
       <Button variant='info' onClick={nexButtonHandler}>Next</Button>
       </div>
       <ToastContainer theme="colored"/>

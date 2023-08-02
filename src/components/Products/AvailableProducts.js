@@ -22,43 +22,43 @@ import axios from "axios";
 const productsArr = [
 
     {   id:1,
-        title: 'Denim Jacket',
+        title: 'DENIM JACKET',
         price: 999,
         imageUrl: image1,
     },
     {   id:2,
-        title: 'Traditional Kurti',
+        title: 'TRADITIONAL KURTI',
         price: 2999,
         imageUrl: image2,
     },
     {   id:3,
-        title: 'Tshirts',
+        title: 'TSHIRTS',
         price: 470,
         imageUrl: image3,
     },
     {   id:4,
-        title: 'Formal Fashion',
+        title: 'FORMAL FASHION',
         price: 1999,
         imageUrl: image4,
     },
     {   id:5,
-      title: 'Track pant & Jogger',
+      title: 'TRACK PANT & JOGGER',
       price: 999,
       imageUrl: image5,
   },
   {   id:6,
-      title: 'winter-jacket',
+      title: 'WINTER-JACKET',
       price: 1199,
       imageUrl: image6,
   }
   ,
     {   id:7,
-      title: 'Rio party wear',
+      title: 'RIO PARTY WEAR',
       price: 1499,
       imageUrl: image7,
   },
   {   id:8,
-      title: 'Long sleeve striped shirt',
+      title: 'LONG SLEEVE STRIPED SHIRT',
       price: 599,
       imageUrl: image8,
   }
@@ -89,7 +89,7 @@ const AvailableProducts=()=>{
     try {
       // ... existing code ...
       const response = await axios.post(
-        `https://crudcrud.com/api/1f399784f37246e79554e3c1d0fc0ac0/${updatedEmail}`,
+        `https://crudcrud.com/api/4910f3b0671f47b99c71989ddf0486c0/${updatedEmail}`,
         item
       );
       console.log(response.data);
@@ -136,7 +136,7 @@ const AvailableProducts=()=>{
       </Container>
       <div className={classes.changer}>
       <Button variant='info' onClick={prevButtonHandler}>Prev</Button>
-      <span>1</span>
+      <span style={{marginTop:"4px"}}>1</span>
       <Button variant='info' onClick={nexButtonHandler}>Next</Button>
       </div>
       <ToastContainer theme="colored"/>
