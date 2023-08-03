@@ -53,7 +53,7 @@ const AvailableProducts = () => {
     try {
       // ... existing code ...
       const response = await axios.post(
-        `https://crudcrud.com/api/4910f3b0671f47b99c71989ddf0486c0/${updatedEmail}`,
+        `https://crudcrud.com/api/6d4c4a821efe4ec597892ef03b5fb525/${updatedEmail}`,
         item
       );
       console.log(response.data);

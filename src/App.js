@@ -12,7 +12,7 @@ import AvailableProducts5 from "./components/Products/AvailableProducts5";
 import About from "./components/Pages/About";
 import Home from "./components/Pages/Home";
 import ContactUs from "./components/Pages/ContactUs";
-import ProductDetails from "./components/Products/ProductDetails";
+import ProductDetails from "./components/Products"
 import LoginForm from "./components/Pages/LoginForm";
 import AuthContext from "./store/auth-context";
 import "./App.css";
